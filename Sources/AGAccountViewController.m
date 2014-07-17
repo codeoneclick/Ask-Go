@@ -7,8 +7,11 @@
 //
 
 #import "AGAccountViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface AGAccountViewController ()
+@interface AGAccountViewController () <FBLoginViewDelegate>
+
+@property (weak, nonatomic) IBOutlet FBProfilePictureView *accountImage;
 
 @end
 
@@ -17,8 +20,8 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self)
+    {
     }
     return self;
 }
@@ -26,24 +29,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (IBAction)loginWithFacebookBtnAction:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    FBLoginView *loginView = [[FBLoginView alloc] init];
+    [loginView setReadPermissions:@[@"public_profile", @"email", @"user_friends"]];
+    
+    // Set this loginUIViewController to be the loginView button's delegate
+    loginView.delegate = self;
+    
+    // Align the button in the center horizontally
+    loginView.frame = CGRectOffset(loginView.frame,
+                                   (self.view.center.x - (loginView.frame.size.width / 2)),
+                                   5);
+    
+    // Align the button in the center vertically
+    loginView.center = self.view.center;
+    
+    // Add the button to the view
+    [self.view addSubview:loginView];
 }
-*/
 
 @end
