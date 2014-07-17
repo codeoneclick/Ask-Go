@@ -12,6 +12,11 @@
 @interface AGAccountViewController () <FBLoginViewDelegate>
 
 @property (weak, nonatomic) IBOutlet FBProfilePictureView *accountImage;
+@property (weak, nonatomic) IBOutlet FBLoginView *fbLoginButton;
+@property (weak, nonatomic) IBOutlet UITextField *nameLabel;
+@property (weak, nonatomic) IBOutlet UITextField *surnameLabel;
+@property (weak, nonatomic) IBOutlet UITextField *nicknameLabel;
+@property (weak, nonatomic) IBOutlet UITextField *emailLabel;
 
 @end
 
@@ -29,6 +34,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.fbLoginButton setReadPermissions:@[@"public_profile", @"email", @"user_friends"]];
+    [self.fbLoginButton setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,24 +44,12 @@
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)loginWithFacebookBtnAction:(id)sender
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user
 {
-    FBLoginView *loginView = [[FBLoginView alloc] init];
-    [loginView setReadPermissions:@[@"public_profile", @"email", @"user_friends"]];
-    
-    // Set this loginUIViewController to be the loginView button's delegate
-    loginView.delegate = self;
-    
-    // Align the button in the center horizontally
-    loginView.frame = CGRectOffset(loginView.frame,
-                                   (self.view.center.x - (loginView.frame.size.width / 2)),
-                                   5);
-    
-    // Align the button in the center vertically
-    loginView.center = self.view.center;
-    
-    // Add the button to the view
-    [self.view addSubview:loginView];
+    self.accountImage.profileID = user.objectID;
+    [self.nameLabel setText:user.first_name];
+    [self.surnameLabel setText:user.last_name];
+    [self.nicknameLabel setText:user.username];
 }
 
 @end
