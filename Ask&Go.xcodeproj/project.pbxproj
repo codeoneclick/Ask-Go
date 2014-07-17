@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21C1A86E197803D20006E03E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C1A86D197803D20006E03E /* Foundation.framework */; };
+		21C1A870197803D20006E03E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C1A86F197803D20006E03E /* CoreGraphics.framework */; };
+		21C1A872197803D20006E03E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C1A871197803D20006E03E /* UIKit.framework */; };
+		21C1A8AE1978047E0006E03E /* AGEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8AB1978047E0006E03E /* AGEventsViewController.m */; };
+		21C1A8AF1978047E0006E03E /* AGPlansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8AD1978047E0006E03E /* AGPlansViewController.m */; };
+		21C1A8B2197804870006E03E /* AGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8B1197804870006E03E /* AGAppDelegate.m */; };
+		21C1A8B5197804910006E03E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21C1A8B3197804910006E03E /* Images.xcassets */; };
+		21C1A8B6197804910006E03E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21C1A8B4197804910006E03E /* Main.storyboard */; };
+		21C1A8B9197804A40006E03E /* Ask&Go.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C1A8B7197804A30006E03E /* Ask&Go.plist */; };
+		21C1A8BA197804A40006E03E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8B8197804A40006E03E /* main.m */; };
+		21C1A8BD197805DE0006E03E /* AGHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8BC197805DE0006E03E /* AGHistoryViewController.m */; };
+		21C1A8C0197805F50006E03E /* AGNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8BF197805F50006E03E /* AGNotificationsViewController.m */; };
+		21C1A8C31978060A0006E03E /* AGAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8C21978060A0006E03E /* AGAccountViewController.m */; };
+		21C1A8C8197808CF0006E03E /* AGDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8C6197808CF0006E03E /* AGDatabase.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21C1A86A197803D20006E03E /* Ask&Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ask&Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C1A86D197803D20006E03E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21C1A86F197803D20006E03E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21C1A871197803D20006E03E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21C1A88F197803D20006E03E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21C1A8AA1978047E0006E03E /* AGEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGEventsViewController.h; path = Sources/AGEventsViewController.h; sourceTree = "<group>"; };
+		21C1A8AB1978047E0006E03E /* AGEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGEventsViewController.m; path = Sources/AGEventsViewController.m; sourceTree = "<group>"; };
+		21C1A8AC1978047E0006E03E /* AGPlansViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGPlansViewController.h; path = Sources/AGPlansViewController.h; sourceTree = "<group>"; };
+		21C1A8AD1978047E0006E03E /* AGPlansViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGPlansViewController.m; path = Sources/AGPlansViewController.m; sourceTree = "<group>"; };
+		21C1A8B0197804870006E03E /* AGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAppDelegate.h; path = Sources/AGAppDelegate.h; sourceTree = "<group>"; };
+		21C1A8B1197804870006E03E /* AGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGAppDelegate.m; path = Sources/AGAppDelegate.m; sourceTree = "<group>"; };
+		21C1A8B3197804910006E03E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
+		21C1A8B4197804910006E03E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Main.storyboard; sourceTree = "<group>"; };
+		21C1A8B7197804A30006E03E /* Ask&Go.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Ask&Go.plist"; path = "Support/Ask&Go.plist"; sourceTree = "<group>"; };
+		21C1A8B8197804A40006E03E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Support/main.m; sourceTree = "<group>"; };
+		21C1A8BB197805DE0006E03E /* AGHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGHistoryViewController.h; path = Sources/AGHistoryViewController.h; sourceTree = "<group>"; };
+		21C1A8BC197805DE0006E03E /* AGHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGHistoryViewController.m; path = Sources/AGHistoryViewController.m; sourceTree = "<group>"; };
+		21C1A8BE197805F50006E03E /* AGNotificationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGNotificationsViewController.h; path = Sources/AGNotificationsViewController.h; sourceTree = "<group>"; };
+		21C1A8BF197805F50006E03E /* AGNotificationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGNotificationsViewController.m; path = Sources/AGNotificationsViewController.m; sourceTree = "<group>"; };
+		21C1A8C11978060A0006E03E /* AGAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAccountViewController.h; path = Sources/AGAccountViewController.h; sourceTree = "<group>"; };
+		21C1A8C21978060A0006E03E /* AGAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGAccountViewController.m; path = Sources/AGAccountViewController.m; sourceTree = "<group>"; };
+		21C1A8C7197808CF0006E03E /* AGDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AGDatabase.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21C1A867197803D20006E03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C1A870197803D20006E03E /* CoreGraphics.framework in Frameworks */,
+				21C1A872197803D20006E03E /* UIKit.framework in Frameworks */,
+				21C1A86E197803D20006E03E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21C1A861197803D20006E03E = {
+			isa = PBXGroup;
+			children = (
+				21C1A8A51978043D0006E03E /* Sources */,
+				21C1A8A71978044F0006E03E /* Resources */,
+				21C1A8A81978045C0006E03E /* Libraries */,
+				21C1A8A9197804640006E03E /* Support */,
+				21C1A86C197803D20006E03E /* Frameworks */,
+				21C1A86B197803D20006E03E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21C1A86B197803D20006E03E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A86A197803D20006E03E /* Ask&Go.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21C1A86C197803D20006E03E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A86D197803D20006E03E /* Foundation.framework */,
+				21C1A86F197803D20006E03E /* CoreGraphics.framework */,
+				21C1A871197803D20006E03E /* UIKit.framework */,
+				21C1A88F197803D20006E03E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21C1A8A51978043D0006E03E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8C4197808660006E03E /* Database */,
+				21C1A8A6197804430006E03E /* Controllers */,
+				21C1A8B0197804870006E03E /* AGAppDelegate.h */,
+				21C1A8B1197804870006E03E /* AGAppDelegate.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		21C1A8A6197804430006E03E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8AA1978047E0006E03E /* AGEventsViewController.h */,
+				21C1A8AB1978047E0006E03E /* AGEventsViewController.m */,
+				21C1A8AC1978047E0006E03E /* AGPlansViewController.h */,
+				21C1A8AD1978047E0006E03E /* AGPlansViewController.m */,
+				21C1A8BB197805DE0006E03E /* AGHistoryViewController.h */,
+				21C1A8BC197805DE0006E03E /* AGHistoryViewController.m */,
+				21C1A8BE197805F50006E03E /* AGNotificationsViewController.h */,
+				21C1A8BF197805F50006E03E /* AGNotificationsViewController.m */,
+				21C1A8C11978060A0006E03E /* AGAccountViewController.h */,
+				21C1A8C21978060A0006E03E /* AGAccountViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		21C1A8A71978044F0006E03E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8B4197804910006E03E /* Main.storyboard */,
+				21C1A8B3197804910006E03E /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		21C1A8A81978045C0006E03E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		21C1A8A9197804640006E03E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8B7197804A30006E03E /* Ask&Go.plist */,
+				21C1A8B8197804A40006E03E /* main.m */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		21C1A8C4197808660006E03E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8C51978086D0006E03E /* Model */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		21C1A8C51978086D0006E03E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8C6197808CF0006E03E /* AGDatabase.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21C1A869197803D20006E03E /* Ask&Go */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C1A89F197803D20006E03E /* Build configuration list for PBXNativeTarget "Ask&Go" */;
+			buildPhases = (
+				21C1A866197803D20006E03E /* Sources */,
+				21C1A867197803D20006E03E /* Frameworks */,
+				21C1A868197803D20006E03E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ask&Go";
+			productName = "Ask&Go";
+			productReference = 21C1A86A197803D20006E03E /* Ask&Go.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21C1A862197803D20006E03E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = sergey.sergeev;
+			};
+			buildConfigurationList = 21C1A865197803D20006E03E /* Build configuration list for PBXProject "Ask&Go" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21C1A861197803D20006E03E;
+			productRefGroup = 21C1A86B197803D20006E03E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21C1A869197803D20006E03E /* Ask&Go */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21C1A868197803D20006E03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C1A8B9197804A40006E03E /* Ask&Go.plist in Resources */,
+				21C1A8B5197804910006E03E /* Images.xcassets in Resources */,
+				21C1A8B6197804910006E03E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21C1A866197803D20006E03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C1A8BD197805DE0006E03E /* AGHistoryViewController.m in Sources */,
+				21C1A8B2197804870006E03E /* AGAppDelegate.m in Sources */,
+				21C1A8AF1978047E0006E03E /* AGPlansViewController.m in Sources */,
+				21C1A8BA197804A40006E03E /* main.m in Sources */,
+				21C1A8C8197808CF0006E03E /* AGDatabase.xcdatamodeld in Sources */,
+				21C1A8AE1978047E0006E03E /* AGEventsViewController.m in Sources */,
+				21C1A8C0197805F50006E03E /* AGNotificationsViewController.m in Sources */,
+				21C1A8C31978060A0006E03E /* AGAccountViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		21C1A89D197803D20006E03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21C1A89E197803D20006E03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21C1A8A0197803D20006E03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Ask&Go.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21C1A8A1197803D20006E03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Ask&Go.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21C1A865197803D20006E03E /* Build configuration list for PBXProject "Ask&Go" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C1A89D197803D20006E03E /* Debug */,
+				21C1A89E197803D20006E03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C1A89F197803D20006E03E /* Build configuration list for PBXNativeTarget "Ask&Go" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C1A8A0197803D20006E03E /* Debug */,
+				21C1A8A1197803D20006E03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21C1A8C6197808CF0006E03E /* AGDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21C1A8C7197808CF0006E03E /* AGDatabase.xcdatamodel */,
+			);
+			currentVersion = 21C1A8C7197808CF0006E03E /* AGDatabase.xcdatamodel */;
+			name = AGDatabase.xcdatamodeld;
+			path = Resources/AGDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 21C1A862197803D20006E03E /* Project object */;
+}

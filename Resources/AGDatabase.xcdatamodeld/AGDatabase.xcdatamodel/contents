@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" syncable="YES"/>
+    <entity name="Event" syncable="YES"/>
+    <entity name="Notification" syncable="YES"/>
+    <elements>
+        <element name="Account" positionX="-63" positionY="-18" width="128" height="45"/>
+        <element name="Notification" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="Event" positionX="-36" positionY="9" width="128" height="45"/>
+    </elements>
+</model>
