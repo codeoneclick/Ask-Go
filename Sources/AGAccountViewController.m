@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet FBProfilePictureView *accountImage;
 @property (weak, nonatomic) IBOutlet FBLoginView *fbLoginButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
 @property (weak, nonatomic) IBOutlet UITextField *nameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *surnameLabel;
 @property (weak, nonatomic) IBOutlet UITextField *nicknameLabel;
@@ -50,6 +51,7 @@
     [self.nameLabel setText:user.first_name];
     [self.surnameLabel setText:user.last_name];
     [self.nicknameLabel setText:user.username];
+    [self.emailLabel setText:[user objectForKey:@"email"]];
 }
 
 @end
