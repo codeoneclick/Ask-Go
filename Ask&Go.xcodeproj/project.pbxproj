@@ -21,6 +21,9 @@
 		21C1A8C0197805F50006E03E /* AGNotificationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8BF197805F50006E03E /* AGNotificationsViewController.m */; };
 		21C1A8C31978060A0006E03E /* AGAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8C21978060A0006E03E /* AGAccountViewController.m */; };
 		21C1A8C8197808CF0006E03E /* AGDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8C6197808CF0006E03E /* AGDatabase.xcdatamodeld */; };
+		21C1A8D6197919480006E03E /* AGDatabaseFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8D5197919480006E03E /* AGDatabaseFacade.m */; };
+		21C1A8E1197922F30006E03E /* AGEntityProfile+DTO.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8E0197922F30006E03E /* AGEntityProfile+DTO.mm */; };
+		21C1A8E419792BF90006E03E /* AGEntityProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 21C1A8E319792BF90006E03E /* AGEntityProfile.m */; };
 		460DD307FC4044EC935A312E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9182B5F9C8A449B394A86181 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,15 @@
 		21C1A8C11978060A0006E03E /* AGAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGAccountViewController.h; path = Sources/AGAccountViewController.h; sourceTree = "<group>"; };
 		21C1A8C21978060A0006E03E /* AGAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGAccountViewController.m; path = Sources/AGAccountViewController.m; sourceTree = "<group>"; };
 		21C1A8C7197808CF0006E03E /* AGDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AGDatabase.xcdatamodel; sourceTree = "<group>"; };
+		21C1A8D4197919480006E03E /* AGDatabaseFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGDatabaseFacade.h; path = Sources/AGDatabaseFacade.h; sourceTree = "<group>"; };
+		21C1A8D5197919480006E03E /* AGDatabaseFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGDatabaseFacade.m; path = Sources/AGDatabaseFacade.m; sourceTree = "<group>"; };
+		21C1A8D7197919810006E03E /* AGDatabaseImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AGDatabaseImporter.h; path = Sources/AGDatabaseImporter.h; sourceTree = "<group>"; };
+		21C1A8D81979199A0006E03E /* AGDatabaseAccessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AGDatabaseAccessor.h; path = Sources/AGDatabaseAccessor.h; sourceTree = "<group>"; };
+		21C1A8DD19791BFE0006E03E /* AGDatabaseEntitiesCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AGDatabaseEntitiesCommon.h; path = Sources/AGDatabaseEntitiesCommon.h; sourceTree = "<group>"; };
+		21C1A8DF197922340006E03E /* AGEntityProfile+DTO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AGEntityProfile+DTO.h"; path = "Sources/AGEntityProfile+DTO.h"; sourceTree = "<group>"; };
+		21C1A8E0197922F30006E03E /* AGEntityProfile+DTO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "AGEntityProfile+DTO.mm"; path = "Sources/AGEntityProfile+DTO.mm"; sourceTree = "<group>"; };
+		21C1A8E219792BF90006E03E /* AGEntityProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGEntityProfile.h; path = Sources/AGEntityProfile.h; sourceTree = "<group>"; };
+		21C1A8E319792BF90006E03E /* AGEntityProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGEntityProfile.m; path = Sources/AGEntityProfile.m; sourceTree = "<group>"; };
 		9182B5F9C8A449B394A86181 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63F7D435BAC4B5D81FF18F8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,7 +167,14 @@
 		21C1A8C4197808660006E03E /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				21C1A8DE197922030006E03E /* EntitiesExtensions */,
+				21C1A8D919791A530006E03E /* Entities */,
 				21C1A8C51978086D0006E03E /* Model */,
+				21C1A8DD19791BFE0006E03E /* AGDatabaseEntitiesCommon.h */,
+				21C1A8D7197919810006E03E /* AGDatabaseImporter.h */,
+				21C1A8D81979199A0006E03E /* AGDatabaseAccessor.h */,
+				21C1A8D4197919480006E03E /* AGDatabaseFacade.h */,
+				21C1A8D5197919480006E03E /* AGDatabaseFacade.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -166,6 +185,24 @@
 				21C1A8C6197808CF0006E03E /* AGDatabase.xcdatamodeld */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		21C1A8D919791A530006E03E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8E219792BF90006E03E /* AGEntityProfile.h */,
+				21C1A8E319792BF90006E03E /* AGEntityProfile.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		21C1A8DE197922030006E03E /* EntitiesExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				21C1A8DF197922340006E03E /* AGEntityProfile+DTO.h */,
+				21C1A8E0197922F30006E03E /* AGEntityProfile+DTO.mm */,
+			);
+			name = EntitiesExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,12 +307,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C1A8BD197805DE0006E03E /* AGHistoryViewController.m in Sources */,
+				21C1A8E419792BF90006E03E /* AGEntityProfile.m in Sources */,
 				21C1A8B2197804870006E03E /* AGAppDelegate.m in Sources */,
 				21C1A8AF1978047E0006E03E /* AGPlansViewController.m in Sources */,
 				21C1A8BA197804A40006E03E /* main.m in Sources */,
+				21C1A8D6197919480006E03E /* AGDatabaseFacade.m in Sources */,
 				21C1A8C8197808CF0006E03E /* AGDatabase.xcdatamodeld in Sources */,
 				21C1A8AE1978047E0006E03E /* AGEventsViewController.m in Sources */,
 				21C1A8C0197805F50006E03E /* AGNotificationsViewController.m in Sources */,
+				21C1A8E1197922F30006E03E /* AGEntityProfile+DTO.mm in Sources */,
 				21C1A8C31978060A0006E03E /* AGAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
